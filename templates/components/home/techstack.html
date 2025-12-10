@@ -1,263 +1,344 @@
-<section class="py-20 lg:py-32 bg-transparent overflow-hidden">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<section class="py-20 bg-transparent relative">
 
-        <div class="text-center mb-16 opacity-0 animate-slideUp" style="animation-delay: 0.2s;">
-            <h3 class="text-lg font-semibold text-teal-400 uppercase tracking-widest">
-                Technical Deep Dive
-            </h3>
-            <h2 class="text-4xl sm:text-5xl font-extrabold text-white mt-2">
-                My Core Technology Stack
-            </h2>
-            <p class="mt-4 max-w-xl mx-auto text-gray-400">
-                Focused proficiency across high-demand frameworks, database management, and modern styling utilities for building complete applications.
-            </p>
+  <!-- CENTER TIMELINE LINE -->
+  <div class="absolute top-0 left-1/2 transform -translate-x-1/2 w-1 bg-white/20 h-full"></div>
+
+  <div class="max-w-6xl mx-auto px-4">
+
+    <!-- MAIN TITLE -->
+    <div class="flex justify-center mb-10">
+      <h2 class="text-4xl font-extrabold text-white px-6 py-3 rounded-xl title-bg">
+        My Technology Stack Roadmap
+      </h2>
+    </div>
+
+    <div class="space-y-16">
+
+      <!-- SECTION: Core Frameworks -->
+      <div class="section-title">Core Frameworks ⚙️</div>
+
+      <!-- Django -->
+      <div class="timeline-item group">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card left-card flex justify-end items-center space-x-4">
+          <div class="text-right">
+            <h3 class="font-bold text-white text-xl">✔ Django</h3>
+            <p class="text-gray-300 text-sm">ORM, Signals, Middleware, Admin customization.</p>
+          </div>
+          <div class="w-16 h-16 bg-white/20 backdrop-blur-md rounded-xl flex items-center justify-center border border-white/30 shadow-lg">
+            <img src="https://static.djangoproject.com/img/logos/django-logo-negative.svg" class="w-12 h-12 object-contain" loading="lazy" alt="Django">
+          </div>
         </div>
+      </div>
 
-        <h3 class="text-3xl font-bold text-teal-400 mb-8 mt-12 opacity-0 animate-slideUp" style="animation-delay: 0.4s;">
-            1. Core Frameworks ⚙️
-        </h3>
-
-        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mb-16">
-
-            <div class="group-card h-full" style="animation-delay: 0.5s;">
-                <div class="card-inner border-green-400/50 hover:shadow-green-500/30">
-                    <div class="text-3xl mb-2">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/7/7b/Django_logo.svg" alt="Django" class="w-8 h-8 filter drop-shadow-lg">
-                    </div>
-                    <h4 class="text-lg font-bold text-white mb-1">Django</h4>
-                    <p class="text-xs text-gray-400">ORM, Signals, Middleware, Admin customization.</p>
-                </div>
-            </div>
-
-            <div class="group-card h-full" style="animation-delay: 0.6s;">
-                <div class="card-inner border-teal-400/50 hover:shadow-teal-500/30">
-                    <div class="w-8 h-8 mb-2 flex items-center justify-center text-xl font-extrabold text-teal-400">DRF</div>
-                    <h4 class="text-lg font-bold text-white mb-1">DRF (REST API)</h4>
-                    <p class="text-xs text-gray-400">ViewSets, Serializers, JWT/OAuth Authentication.</p>
-                </div>
-            </div>
-
-            <div class="group-card h-full" style="animation-delay: 0.7s;">
-                <div class="card-inner border-cyan-400/50 hover:shadow-cyan-500/30">
-                    <div class="text-3xl mb-2 text-cyan-400">⚛️</div>
-                    <h4 class="text-lg font-bold text-white mb-1">React.js</h4>
-                    <p class="text-xs text-gray-400">Component-based, Hooks, State Management.</p>
-                </div>
-            </div>
-
-            <div class="group-card h-full" style="animation-delay: 0.8s;">
-                <div class="card-inner border-white/50 hover:shadow-white/30">
-                    <div class="text-3xl mb-2 text-white">🌐</div>
-                    <h4 class="text-lg font-bold text-white mb-1">Next.js</h4>
-                    <p class="text-xs text-gray-400">Server-side rendering (SSR) and routing.</p>
-                </div>
-            </div>
-                        <div class="group-card h-full" style="animation-delay: 1.8s;">
-                <div class="card-inner border-cyan-400/50 hover:shadow-cyan-400/30">
-                    <div class="text-3xl mb-2 text-cyan-400">🌬</div>
-                    <h4 class="text-lg font-bold text-white mb-1">Tailwind CSS</h4>
-                    <p class="text-xs text-gray-400">Utility-first styling for modern design.</p>
-                </div>
-            </div>
-
-            <div class="group-card h-full" style="animation-delay: 1.9s;">
-                <div class="card-inner border-purple-400/50 hover:shadow-purple-400/30">
-                    <div class="text-3xl mb-2 text-purple-400">🎨</div>
-                    <h4 class="text-lg font-bold text-white mb-1">Bootstrap</h4>
-                    <p class="text-xs text-gray-400">Responsive UI framework, rapid prototyping.</p>
-                </div>
-            </div>
-
+      <!-- DRF -->
+      <div class="timeline-item group">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card right-card flex items-center space-x-4">
+          <div class="w-16 h-16 bg-white/20 backdrop-blur-md rounded-xl flex items-center justify-center border border-white/30 shadow-lg">
+            <img src="https://www.django-rest-framework.org/img/logo.png" class="w-12 h-12 object-contain" loading="lazy" alt="DRF">
+          </div>
+          <div class="text-left">
+            <h3 class="font-bold text-white text-xl">✔ DRF</h3>
+            <p class="text-gray-300 text-sm">Serializers, ViewSets, JWT/OAuth Authentication.</p>
+          </div>
         </div>
+      </div>
 
-        <h3 class="text-3xl font-bold text-teal-400 mb-8 mt-12 opacity-0 animate-slideUp" style="animation-delay: 0.9s;">
-            2. Databases & Persistence 🗄
-        </h3>
-
-        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mb-16">
-
-            <div class="group-card h-full" style="animation-delay: 1.0s;">
-                <div class="card-inner border-blue-500/50 hover:shadow-blue-500/30">
-                    <div class="text-3xl mb-2 text-blue-500">
-                         <img src="https://upload.wikimedia.org/wikipedia/commons/2/29/Postgresql_logo.svg" alt="PostgreSQL" class="w-8 h-8 filter drop-shadow-lg">
-                    </div>
-                    <h4 class="text-lg font-bold text-white mb-1">PostgreSQL</h4>
-                    <p class="text-xs text-gray-400">Primary relational database, advanced querying.</p>
-                </div>
-            </div>
-
-            <div class="group-card h-full" style="animation-delay: 1.1s;">
-                <div class="card-inner border-orange-400/50 hover:shadow-orange-400/30">
-                    <div class="text-3xl mb-2 text-orange-400">
-                        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/6/66/MySQL_logo.svg/1200px-MySQL_logo.svg.png" alt="MySQL" class="w-8 h-8 filter drop-shadow-lg">
-                    </div>
-                    <h4 class="text-lg font-bold text-white mb-1">MySQL</h4>
-                    <p class="text-xs text-gray-400">Alternative relational database, optimization.</p>
-                </div>
-            </div>
-
-            <div class="group-card h-full" style="animation-delay: 1.2s;">
-                <div class="card-inner border-green-500/50 hover:shadow-green-500/30">
-                    <div class="text-3xl mb-2 text-green-500">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/9/93/MongoDB_logo.svg" alt="MongoDB" class="w-8 h-8 filter drop-shadow-lg">
-                    </div>
-                    <h4 class="text-lg font-bold text-white mb-1">MongoDB</h4>
-                    <p class="text-xs text-gray-400">NoSQL data modeling and indexing.</p>
-                </div>
-            </div>
-
+      <!-- React -->
+      <div class="timeline-item group">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card left-card flex justify-end items-center space-x-4">
+          <div class="text-right">
+            <h3 class="font-bold text-white text-xl">✔ React</h3>
+            <p class="text-gray-300 text-sm">Hooks, Components, State Management.</p>
+          </div>
+          <div class="w-16 h-16 bg-white/20 backdrop-blur-md rounded-xl flex items-center justify-center border border-white/30 shadow-lg">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" class="w-12 h-12 object-contain" loading="lazy" alt="React">
+          </div>
         </div>
+      </div>
 
-        <h3 class="text-3xl font-bold text-teal-400 mb-8 mt-12 opacity-0 animate-slideUp" style="animation-delay: 1.3s;">
-            3. Core Languages & Styling 💡
-        </h3>
-
-        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 mb-16">
-
-            <div class="group-card h-full" style="animation-delay: 1.4s;">
-                <div class="card-inner border-yellow-400/50 hover:shadow-yellow-400/30">
-                    <div class="text-3xl mb-2 text-yellow-400">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" alt="Python" class="w-8 h-8 filter drop-shadow-lg">
-                    </div>
-                    <h4 class="text-lg font-bold text-white mb-1">Python</h4>
-                    <p class="text-xs text-gray-400">Primary backend language, automation.</p>
-                </div>
-            </div>
-
-            <div class="group-card h-full" style="animation-delay: 1.5s;">
-                <div class="card-inner border-yellow-500/50 hover:shadow-yellow-500/30">
-                    <div class="text-3xl mb-2 text-yellow-500">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/9/99/Unofficial_JavaScript_logo_2.svg" alt="JavaScript" class="w-8 h-8 filter drop-shadow-lg">
-                    </div>
-                    <h4 class="text-lg font-bold text-white mb-1">JavaScript</h4>
-                    <p class="text-xs text-gray-400">Frontend logic and interactivity.</p>
-                </div>
-            </div>
-
-            <div class="group-card h-full" style="animation-delay: 1.6s;">
-                <div class="card-inner border-orange-600/50 hover:shadow-orange-600/30">
-                    <div class="text-3xl mb-2 text-orange-600">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" alt="HTML" class="w-8 h-8 filter drop-shadow-lg">
-                    </div>
-                    <h4 class="text-lg font-bold text-white mb-1">HTML</h4>
-                    <p class="text-xs text-gray-400">Semantic markup and accessibility.</p>
-                </div>
-            </div>
-
-            <div class="group-card h-full" style="animation-delay: 1.7s;">
-                <div class="card-inner border-blue-500/50 hover:shadow-blue-500/30">
-                    <div class="text-3xl mb-2 text-blue-500">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg" alt="CSS" class="w-8 h-8 filter drop-shadow-lg">
-                    </div>
-                    <h4 class="text-lg font-bold text-white mb-1">CSS</h4>
-                    <p class="text-xs text-gray-400">Core styling and responsive design.</p>
-                </div>
-            </div>
-
+      <!-- Next.js -->
+      <div class="timeline-item group">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card right-card flex items-center space-x-4">
+          <div class="w-16 h-16 bg-white/20 backdrop-blur-md rounded-xl flex items-center justify-center border border-white/30 shadow-lg">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Nextjs-logo.svg" class="w-12 h-12 object-contain" loading="lazy" alt="Next.js">
+          </div>
+          <div class="text-left">
+            <h3 class="font-bold text-white text-xl">✔ Next.js</h3>
+            <p class="text-gray-300 text-sm">SSR, Routing, API Routes.</p>
+          </div>
         </div>
+      </div>
 
-        <h3 class="text-3xl font-bold text-teal-400 mb-8 mt-12 opacity-0 animate-slideUp" style="animation-delay: 2.0s;">
-            4. DevOps, CI/CD & Deployment ☁️
-        </h3>
-
-        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-
-            <div class="group-card h-full" style="animation-delay: 2.1s;">
-                <div class="card-inner border-red-600/50 hover:shadow-red-600/30">
-                    <div class="text-3xl mb-2 text-red-600">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/e/e0/Git-logo.svg" alt="Git" class="w-8 h-8 filter drop-shadow-lg">
-                    </div>
-                    <h4 class="text-lg font-bold text-white mb-1">Git</h4>
-                    <p class="text-xs text-gray-400">Version control, branching, merging strategies.</p>
-                </div>
-            </div>
-
-            <div class="group-card h-full" style="animation-delay: 2.2s;">
-                <div class="card-inner border-white/50 hover:shadow-white/30">
-                    <div class="text-3xl mb-2 text-white">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="GitHub" class="w-8 h-8 filter drop-shadow-lg">
-                    </div>
-                    <h4 class="text-lg font-bold text-white mb-1">GitHub</h4>
-                    <p class="text-xs text-gray-400">Repository management, CI/CD via Actions.</p>
-                </div>
-            </div>
-
-            <div class="group-card h-full" style="animation-delay: 2.3s;">
-                <div class="card-inner border-white/50 hover:shadow-white/30">
-                    <div class="text-3xl mb-2 text-white">
-                        <img src="https://assets.vercel.com/image/upload/v1607554385/repositories/vercel/logo-inverted.svg" alt="Vercel" class="w-8 h-8 filter drop-shadow-lg">
-                    </div>
-                    <h4 class="text-lg font-bold text-white mb-1">Vercel</h4>
-                    <p class="text-xs text-gray-400">Frontend deployment, Edge Functions (for Next.js).</p>
-                </div>
-            </div>
-
-            <div class="group-card h-full" style="animation-delay: 2.4s;">
-                <div class="card-inner border-cyan-400/50 hover:shadow-cyan-400/30">
-                    <div class="text-3xl mb-2 text-cyan-400">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/Netlify_logo.svg" alt="Netlify" class="w-8 h-8 filter drop-shadow-lg">
-                    </div>
-                    <h4 class="text-lg font-bold text-white mb-1">Netlify</h4>
-                    <p class="text-xs text-gray-400">Static site hosting, serverless functions.</p>
-                </div>
-            </div>
-
+      <!-- Tailwind -->
+      <div class="timeline-item group">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card left-card flex justify-end items-center space-x-4">
+          <div class="text-right">
+            <h3 class="font-bold text-white text-xl">✔ Tailwind</h3>
+            <p class="text-gray-300 text-sm">Utility-first styling.</p>
+          </div>
+          <div class="w-16 h-16 bg-white/20 backdrop-blur-md rounded-xl flex items-center justify-center border border-white/30 shadow-lg">
+            <img src="https://tailwindcss.com/_next/static/media/tailwindcss-mark.d52e9897.svg" class="w-12 h-12 object-contain" loading="lazy" alt="Tailwind">
+          </div>
         </div>
+      </div>
+
+      <!-- Bootstrap -->
+      <div class="timeline-item group">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card right-card flex items-center space-x-4">
+          <div class="w-16 h-16 bg-white/20 backdrop-blur-md rounded-xl flex items-center justify-center border border-white/30 shadow-lg">
+            <img src="https://getbootstrap.com/docs/5.0/assets/brand/bootstrap-logo.svg" class="w-12 h-12 object-contain" loading="lazy" alt="Bootstrap">
+          </div>
+          <div class="text-left">
+            <h3 class="font-bold text-white text-xl">✔ Bootstrap</h3>
+            <p class="text-gray-300 text-sm">Responsive design framework.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- SECTION: Databases -->
+      <div class="section-title">Databases 🗄</div>
+
+      <!-- PostgreSQL -->
+      <div class="timeline-item group">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card left-card flex justify-end items-center space-x-4">
+          <div class="text-right">
+            <h3 class="font-bold text-white text-xl">✔ PostgreSQL</h3>
+            <p class="text-gray-300 text-sm">Advanced SQL capabilities.</p>
+          </div>
+          <div class="w-16 h-16 bg-white/20 backdrop-blur-md rounded-xl flex items-center justify-center border border-white/30 shadow-lg">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/2/29/Postgresql_logo.svg" class="w-12 h-12 object-contain" loading="lazy" alt="PostgreSQL">
+          </div>
+        </div>
+      </div>
+
+      <!-- MySQL -->
+      <div class="timeline-item group">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card right-card flex items-center space-x-4">
+          <div class="w-16 h-16 bg-white/20 backdrop-blur-md rounded-xl flex items-center justify-center border border-white/30 shadow-lg">
+            <img src="https://upload.wikimedia.org/wikipedia/en/thumb/6/66/MySQL_logo.svg/1200px-MySQL_logo.svg.png" class="w-12 h-12 object-contain" loading="lazy" alt="MySQL">
+          </div>
+          <div class="text-left">
+            <h3 class="font-bold text-white text-xl">✔ MySQL</h3>
+            <p class="text-gray-300 text-sm">Reliable relational database.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- MongoDB -->
+      <div class="timeline-item group">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card left-card flex justify-end items-center space-x-4">
+          <div class="text-right">
+            <h3 class="font-bold text-white text-xl">✔ MongoDB</h3>
+            <p class="text-gray-300 text-sm">NoSQL document-oriented database.</p>
+          </div>
+          <div class="w-16 h-16 bg-white/20 backdrop-blur-md rounded-xl flex items-center justify-center border border-white/30 shadow-lg">
+            <img src="https://webassets.mongodb.com/_com_assets/cms/mongodb-logo-rgb-j6w271g1xn.jpg" class="w-12 h-12 object-contain" loading="lazy" alt="MongoDB">
+          </div>
+        </div>
+      </div>
+
+      <!-- SECTION: Languages -->
+      <div class="section-title">Languages 💡</div>
+
+      <!-- Python -->
+      <div class="timeline-item group">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card right-card flex items-center space-x-4">
+          <div class="w-16 h-16 bg-white/20 backdrop-blur-md rounded-xl flex items-center justify-center border border-white/30 shadow-lg">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" class="w-12 h-12 object-contain" loading="lazy" alt="Python">
+          </div>
+          <div class="text-left">
+            <h3 class="font-bold text-white text-xl">✔ Python</h3>
+            <p class="text-gray-300 text-sm">Backend, scripting & automation.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- JavaScript -->
+      <div class="timeline-item group">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card left-card flex justify-end items-center space-x-4">
+          <div class="text-right">
+            <h3 class="font-bold text-white text-xl">✔ JavaScript</h3>
+            <p class="text-gray-300 text-sm">Core of dynamic UI.</p>
+          </div>
+          <div class="w-16 h-16 bg-white/20 backdrop-blur-md rounded-xl flex items-center justify-center border border-white/30 shadow-lg">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/9/99/Unofficial_JavaScript_logo_2.svg" class="w-12 h-12 object-contain" loading="lazy" alt="JavaScript">
+          </div>
+        </div>
+      </div>
+
+      <!-- HTML -->
+      <div class="timeline-item group">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card right-card flex items-center space-x-4">
+          <div class="w-16 h-16 bg-white/20 backdrop-blur-md rounded-xl flex items-center justify-center border border-white/30 shadow-lg">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" class="w-12 h-12 object-contain" loading="lazy" alt="HTML">
+          </div>
+          <div class="text-left">
+            <h3 class="font-bold text-white text-xl">✔ HTML</h3>
+            <p class="text-gray-300 text-sm">Markup language for web pages.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- CSS -->
+      <div class="timeline-item group">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card left-card flex justify-end items-center space-x-4">
+          <div class="text-right">
+            <h3 class="font-bold text-white text-xl">✔ CSS</h3>
+            <p class="text-gray-300 text-sm">Styling web pages.</p>
+          </div>
+          <div class="w-16 h-16 bg-white/20 backdrop-blur-md rounded-xl flex items-center justify-center border border-white/30 shadow-lg">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg" class="w-12 h-12 object-contain" loading="lazy" alt="CSS">
+          </div>
+        </div>
+      </div>
+
+      <!-- SECTION: Version Control & Deployment -->
+      <div class="section-title">Version Control & Deployment ☁️</div>
+
+      <!-- Git -->
+      <div class="timeline-item group">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card right-card flex items-center space-x-4">
+          <div class="w-16 h-16 bg-white/20 backdrop-blur-md rounded-xl flex items-center justify-center border border-white/30 shadow-lg">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/e/e0/Git-logo.svg" class="w-12 h-12 object-contain" loading="lazy" alt="Git">
+          </div>
+          <div class="text-left">
+            <h3 class="font-bold text-white text-xl">✔ Git</h3>
+            <p class="text-gray-300 text-sm">Version control & branching.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- GitHub -->
+      <div class="timeline-item group">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card left-card flex justify-end items-center space-x-4">
+          <div class="text-right">
+            <h3 class="font-bold text-white text-xl">✔ GitHub</h3>
+            <p class="text-gray-300 text-sm">Repositories, CI/CD & collaboration.</p>
+          </div>
+          <div class="w-16 h-16 bg-white/20 backdrop-blur-md rounded-xl flex items-center justify-center border border-white/30 shadow-lg">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" class="w-12 h-12 object-contain" loading="lazy" alt="GitHub">
+          </div>
+        </div>
+      </div>
+
+      <!-- Vercel -->
+      <div class="timeline-item group">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card right-card flex items-center space-x-4">
+          <div class="w-16 h-16 bg-white/20 backdrop-blur-md rounded-xl flex items-center justify-center border border-white/30 shadow-lg">
+            <img src="https://assets.vercel.com/image/upload/v1607554385/repositories/vercel/logo-inverted.svg" class="w-12 h-12 object-contain" loading="lazy" alt="Vercel">
+          </div>
+          <div class="text-left">
+            <h3 class="font-bold text-white text-xl">✔ Vercel</h3>
+            <p class="text-gray-300 text-sm">Optimized Next.js deployments.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Netlify -->
+      <div class="timeline-item group">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card left-card flex justify-end items-center space-x-4">
+          <div class="text-right">
+            <h3 class="font-bold text-white text-xl">✔ Netlify</h3>
+            <p class="text-gray-300 text-sm">Frontend deployment & hosting.</p>
+          </div>
+          <div class="w-16 h-16 bg-white/20 backdrop-blur-md rounded-xl flex items-center justify-center border border-white/30 shadow-lg">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/9/92/Netlify_logo.svg" class="w-12 h-12 object-contain" loading="lazy" alt="Netlify">
+          </div>
+        </div>
+      </div>
 
     </div>
+  </div>
 </section>
 
 <style>
-/* 1. Custom Animation for better fade-in effect */
-@keyframes slideUp {
-    0% {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
+/* =================== LIQUID GLASS EFFECT =================== */
+.title-bg {
+    background: rgba(9, 46, 32, 0.5);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(9, 46, 32, 0.4);
+    box-shadow: 0 0 20px rgba(9, 46, 32, 0.6);
+    border-radius: 12px;
 }
 
-/* Apply the custom animation */
-.animate-slideUp {
-    animation: slideUp 0.6s ease-out forwards;
+.section-title {
+    text-align: center;
+    color: white;
+    font-size: 1.6rem;
+    font-weight: 800;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    padding: 10px 30px;
+    width: max-content;
+    margin-left: auto;
+    margin-right: auto;
+    background: rgba(9, 46, 32, 0.35);
+    border: 1px solid rgba(9, 46, 32, 0.35);
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
+    animation: fadeSlide 0.8s ease forwards;
 }
 
-/* 2. Global Card Styles for cleaner code and unified animation and height */
-.group-card {
-    /* Base style for delayed animation */
-    opacity: 0;
-    animation: slideUp 0.6s ease-out forwards;
-    transform: translateY(20px);
+.timeline-dot {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 18px;
+    height: 18px;
+    background: #34d399;
+    border-radius: 50%;
+    border: 3px solid white;
+    z-index: 10;
+    animation: pop 0.5s ease;
 }
 
-.card-inner {
-    /* Liquid Glass Base */
-    padding: 1.25rem;
-    border-radius: 1rem;
-    background-color: rgba(255, 255, 255, 0.05); /* bg-white/5 */
-    backdrop-filter: blur(12px); /* backdrop-blur-xl */
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.25);
-
-    /* UNIFORM HEIGHT ENFORCEMENT */
-    height: 100%;
-    min-height: 140px; /* Optional: Sets a minimum height for all cards */
-
-    /* Hover Effects */
-    transition: all 0.4s ease;
-    transform: scale(1);
-    display: flex; /* Ensures content fills height */
-    flex-direction: column;
+.timeline-item {
+    position: relative;
+    width: 100%;
+    min-height: 120px;
 }
 
-.card-inner:hover {
-    transform: scale(1.05);
-    border-color: var(--hover-color, #34d399); /* Default to teal */
-    box-shadow: 0 0 15px var(--shadow-color, rgba(52, 211, 153, 0.6)), 0 0 30px var(--shadow-color, rgba(52, 211, 153, 0.3));
+.timeline-card {
+    position: relative;
+    width: 45%;
 }
 
-/* Applying color specific borders/shadows directly via Tailwind classes in HTML (border-*-400/50) is retained for dynamic colors. */
+.left-card { float: left; }
+.right-card { float: right; }
+
+.timeline-card div.text-left,
+.timeline-card div.text-right {
+    max-width: 220px;
+}
+
+@keyframes fadeSlide {
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes pop {
+    0% { transform: translateX(-50%) scale(0.3); }
+    100% { transform: translateX(-50%) scale(1); }
+}
+
+@media (max-width: 768px) {
+    .timeline-card, .left-card, .right-card { width: 100%; float: none; text-align: left; margin-top: 35px; flex-direction: row; }
+    .timeline-dot { left: 12px; }
+}
 </style>
