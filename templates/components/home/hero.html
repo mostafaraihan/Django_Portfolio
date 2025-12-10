@@ -1,24 +1,122 @@
-<div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 flex flex-col items-center text-center">
-    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-blue-500/30 bg-blue-500/10 text-blue-400 text-xs font-medium mb-6 animate-pulse">
-        <span class="w-2 h-2 rounded-full bg-blue-500"></span>
-        AI-Powered Architecture
-    </div>
+{% load static %}
 
-    <h1 class="text-5xl md:text-7xl font-extrabold text-white tracking-tight mb-6">
-        Build the <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-600">Future</span>
-        <br> with Django.
-    </h1>
+<div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32 overflow-hidden">
+    <div class="absolute top-1/4 left-0 w-96 h-96 bg-[#092e20]/60 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-blob-slow -z-20"></div>
+    <div class="absolute bottom-1/4 right-0 w-80 h-80 bg-teal-500/60 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-blob-delay -z-20"></div>
 
-    <p class="mt-4 max-w-2xl text-lg text-gray-400">
-        This is a professional demonstration of a grid-background layout using Tailwind CSS and Django templates.
-    </p>
+    <div class="absolute inset-0 -z-30 bg-grid-pattern opacity-10"></div>
 
-    <div class="mt-10 flex gap-4">
-        <button class="px-8 py-3 rounded-lg bg-blue-600 hover:bg-blue-500 text-white font-semibold transition-all shadow-[0_0_20px_rgba(37,99,235,0.3)]">
-            Start Building
-        </button>
-        <button class="px-8 py-3 rounded-lg border border-white/10 hover:bg-white/5 text-gray-300 font-semibold transition-all">
-            Documentation
-        </button>
+    <div class="flex flex-col lg:flex-row items-center justify-between gap-12 lg:gap-24">
+
+        <div class="lg:w-1/2 text-center lg:text-left">
+
+            <div class="inline-flex items-center gap-3 px-4 py-2 mb-8 rounded-lg backdrop-blur-md bg-white/10 border border-white/20 opacity-0 animate-slide-up-initial" style="animation-delay: 0.2s;">
+                 <span class="w-3 h-3 rounded-full bg-teal-500 animate-pulse"></span>
+                 <h3 class="text-lg sm:text-xl font-semibold text-gray-400 m-0">
+                    Hello, I'm <span class="text-white font-bold">Mostafa Raihan</span>
+                 </h3>
+            </div>
+
+
+            <h2 class="text-4xl md:text-6xl font-extrabold text-white tracking-tight mb-6 opacity-0 animate-fadeIn" style="animation-delay: 0.6s;">
+                Mastering the Backend Logic to Build <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#092e20] to-teal-500">Fast and Future</span>
+                <br>Proof Applications.
+            </h2>
+
+            <p class="mt-4 max-w-2xl lg:max-w-full **text-sm** text-gray-300 opacity-0 animate-fadeIn" style="animation-delay: 1s;">
+                I am a backend-focused Full-Stack Developer specializing in building **secure, high-performance APIs** with Django/DRF, ensuring clean architecture and robust database solutions.
+            </p>
+
+            <div class="mt-10 flex flex-col sm:flex-row justify-center lg:justify-start gap-4 opacity-0 animate-fadeIn" style="animation-delay: 1.4s;">
+                <button class="px-8 py-3 rounded-lg bg-[#092e20] hover:bg-teal-700 text-white font-semibold transition-all shadow-[0_0_20px_rgba(9,46,32,0.8)] transform hover:scale-[1.02]">
+                    💻 My Work
+                </button>
+                <button class="px-8 py-3 rounded-lg border border-white/20 hover:bg-white/10 text-gray-300 font-semibold transition-all transform hover:scale-[1.02]">
+                    📄 Resume
+                </button>
+            </div>
+        </div>
+
+        <div class="lg:w-1/2 mt-12 lg:mt-0 flex justify-center lg:justify-end animate-scale-up">
+            <div class="relative w-full max-w-lg p-4 rounded-2xl shadow-2xl backdrop-blur-sm bg-white/5 border border-white/10 group">
+                <img
+                    src="{% static 'image/profile.png' %}"
+                    class="w-full h-auto rounded-xl transform group-hover:scale-[0.98] transition-transform duration-700"
+                    alt="Mostafa Raihan - Professional Headshot"
+                >
+                <div class="absolute inset-4 bg-[#092e20]/50 blur-xl rounded-xl -z-10 transform scale-90 opacity-60 group-hover:scale-[0.95] transition-transform duration-700"></div>
+            </div>
+        </div>
     </div>
 </div>
+
+<style>
+@keyframes slideUpInitial {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.animate-slide-up-initial {
+    animation: slideUpInitial 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+}
+
+
+/* Sequential Fade-In Animation (for Title, P, Buttons) */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.animate-fadeIn {
+    animation: fadeIn 0.8s ease-out forwards;
+}
+
+/* SCALE UP (for Image Block) */
+@keyframes scaleUp {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+.animate-scale-up {
+    animation: scaleUp 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+    animation-delay: 0.3s;
+}
+
+/* BACKGROUND BLOB ANIMATION */
+@keyframes blob-movement {
+    0%, 100% {
+        transform: translate(0, 0) scale(1);
+    }
+    25% {
+        transform: translate(20px, -20px) scale(1.1);
+    }
+    50% {
+        transform: translate(0, 30px) scale(0.9);
+    }
+    75% {
+        transform: translate(-20px, -10px) scale(1.1);
+    }
+}
+.animate-blob-slow {
+    animation: blob-movement 20s infinite ease-in-out;
+}
+.animate-blob-delay {
+    animation: blob-movement 20s infinite ease-in-out reverse;
+    animation-delay: 5s;
+}
+</style>
