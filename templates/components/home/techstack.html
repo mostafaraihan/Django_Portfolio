@@ -1,17 +1,20 @@
 <section class="py-20 bg-transparent relative">
 
   <!-- CENTER TIMELINE LINE -->
-  <div class="absolute top-0 left-1/2 transform -translate-x-1/2 w-1 bg-white/20 h-full"></div>
+<!-- CENTER TIMELINE LINE WITH GLOW -->
+<div class="absolute top-0 left-1/2 transform -translate-x-1/2 w-1 h-full bg-[#092e20] glow-line"></div>
+
 
   <div class="max-w-6xl mx-auto px-4">
 
     <!-- MAIN TITLE -->
-    <div class="flex justify-center mb-10">
-      <h2 class="text-4xl font-extrabold text-white px-6 py-3 rounded-xl title-bg">
-        My Technology Stack Roadmap
+    <div class="flex justify-center mb-12">
+      <h2 class="text-3xl font-extrabold text-white px-6 py-3 rounded-2xl title-bg flex items-center space-x-4 animate-pulse">
+        <span class="bg-gradient-to-r from-green-400 via-teal-300 to-blue-400 bg-clip-text text-transparent">
+          My Full Stack Technology Journey
+        </span>
       </h2>
     </div>
-
     <div class="space-y-16">
 
       <!-- SECTION: Core Frameworks -->
@@ -25,8 +28,8 @@
             <h3 class="font-bold text-white text-xl">✔ Django</h3>
             <p class="text-gray-300 text-sm">ORM, Signals, Middleware, Admin customization.</p>
           </div>
-          <div class="w-16 h-16 bg-white/20 backdrop-blur-md rounded-xl flex items-center justify-center border border-white/30 shadow-lg">
-            <img src="https://static.djangoproject.com/img/logos/django-logo-negative.svg" class="w-12 h-12 object-contain" loading="lazy" alt="Django">
+          <div class="w-25 h-25 bg-white/20 backdrop-blur-md rounded-xl flex items-center justify-center border border-white/30 shadow-lg">
+            <img src="data:image/png;base64,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" class="w-24 h-24 object-contain" loading="lazy" alt="Django">
           </div>
         </div>
       </div>
@@ -35,8 +38,8 @@
       <div class="timeline-item group">
         <div class="timeline-dot"></div>
         <div class="timeline-card right-card flex items-center space-x-4">
-          <div class="w-16 h-16 bg-white/20 backdrop-blur-md rounded-xl flex items-center justify-center border border-white/30 shadow-lg">
-            <img src="https://www.django-rest-framework.org/img/logo.png" class="w-12 h-12 object-contain" loading="lazy" alt="DRF">
+          <div class="w-25 h-25 bg-white rounded-xl flex items-center justify-center border border-white/30 shadow-lg">
+            <img src="https://www.django-rest-framework.org/img/logo.png" class="w-24 h-24 object-contain" loading="lazy" alt="DRF">
           </div>
           <div class="text-left">
             <h3 class="font-bold text-white text-xl">✔ DRF</h3>
@@ -53,8 +56,8 @@
             <h3 class="font-bold text-white text-xl">✔ React</h3>
             <p class="text-gray-300 text-sm">Hooks, Components, State Management.</p>
           </div>
-          <div class="w-16 h-16 bg-white/20 backdrop-blur-md rounded-xl flex items-center justify-center border border-white/30 shadow-lg">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" class="w-12 h-12 object-contain" loading="lazy" alt="React">
+          <div class="w-25 h-25 bg-white/20 backdrop-blur-md rounded-xl flex items-center justify-center border border-white/30 shadow-lg">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" class="w-24 h-24 object-contain p-1" loading="lazy" alt="React">
           </div>
         </div>
       </div>
@@ -63,8 +66,8 @@
       <div class="timeline-item group">
         <div class="timeline-dot"></div>
         <div class="timeline-card right-card flex items-center space-x-4">
-          <div class="w-16 h-16 bg-white/20 backdrop-blur-md rounded-xl flex items-center justify-center border border-white/30 shadow-lg">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Nextjs-logo.svg" class="w-12 h-12 object-contain" loading="lazy" alt="Next.js">
+          <div class="w-25 h-25 bg-white/20 backdrop-blur-md rounded-xl flex items-center justify-center border border-white/30 shadow-lg">
+            <img src="data:image/jpeg;base64,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" class="w-24 h-24 object-contain p-1" loading="lazy" alt="Next.js">
           </div>
           <div class="text-left">
             <h3 class="font-bold text-white text-xl">✔ Next.js</h3>
@@ -81,8 +84,8 @@
             <h3 class="font-bold text-white text-xl">✔ Tailwind</h3>
             <p class="text-gray-300 text-sm">Utility-first styling.</p>
           </div>
-          <div class="w-16 h-16 bg-white/20 backdrop-blur-md rounded-xl flex items-center justify-center border border-white/30 shadow-lg">
-            <img src="https://tailwindcss.com/_next/static/media/tailwindcss-mark.d52e9897.svg" class="w-12 h-12 object-contain" loading="lazy" alt="Tailwind">
+          <div class="w-25 h-25 bg-white/20 backdrop-blur-md rounded-xl flex items-center justify-center border border-white/30 shadow-lg">
+            <img src="https://tailwindcss.com/_next/static/media/tailwindcss-mark.d52e9897.svg" class="w-24 h-24 object-contain p-1" loading="lazy" alt="Tailwind">
           </div>
         </div>
       </div>
@@ -91,8 +94,8 @@
       <div class="timeline-item group">
         <div class="timeline-dot"></div>
         <div class="timeline-card right-card flex items-center space-x-4">
-          <div class="w-16 h-16 bg-white/20 backdrop-blur-md rounded-xl flex items-center justify-center border border-white/30 shadow-lg">
-            <img src="https://getbootstrap.com/docs/5.0/assets/brand/bootstrap-logo.svg" class="w-12 h-12 object-contain" loading="lazy" alt="Bootstrap">
+          <div class="w-25 h-25 bg-white/20 backdrop-blur-md rounded-xl flex items-center justify-center border border-white/30 shadow-lg">
+            <img src="https://getbootstrap.com/docs/5.0/assets/brand/bootstrap-logo.svg" class="w-24 h-24 object-contain p-1" loading="lazy" alt="Bootstrap">
           </div>
           <div class="text-left">
             <h3 class="font-bold text-white text-xl">✔ Bootstrap</h3>
@@ -112,8 +115,8 @@
             <h3 class="font-bold text-white text-xl">✔ PostgreSQL</h3>
             <p class="text-gray-300 text-sm">Advanced SQL capabilities.</p>
           </div>
-          <div class="w-16 h-16 bg-white/20 backdrop-blur-md rounded-xl flex items-center justify-center border border-white/30 shadow-lg">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/2/29/Postgresql_logo.svg" class="w-12 h-12 object-contain" loading="lazy" alt="PostgreSQL">
+          <div class="w-25 h-25 bg-white/20 backdrop-blur-md rounded-xl flex items-center justify-center border border-white/30 shadow-lg">
+            <img src="https://www.postgresql.org/media/img/about/press/elephant.png" class="w-24 h-24 object-contain p-1" loading="lazy" alt="PostgreSQL">
           </div>
         </div>
       </div>
@@ -122,8 +125,8 @@
       <div class="timeline-item group">
         <div class="timeline-dot"></div>
         <div class="timeline-card right-card flex items-center space-x-4">
-          <div class="w-16 h-16 bg-white/20 backdrop-blur-md rounded-xl flex items-center justify-center border border-white/30 shadow-lg">
-            <img src="https://upload.wikimedia.org/wikipedia/en/thumb/6/66/MySQL_logo.svg/1200px-MySQL_logo.svg.png" class="w-12 h-12 object-contain" loading="lazy" alt="MySQL">
+          <div class="w-25 h-25 bg-white/20 backdrop-blur-md rounded-xl flex items-center justify-center border border-white/30 shadow-lg">
+            <img src="https://www.mysql.com/common/logos/logo-mysql-170x115.png" class="w-24 h-24 object-contain p-1" loading="lazy" alt="MySQL">
           </div>
           <div class="text-left">
             <h3 class="font-bold text-white text-xl">✔ MySQL</h3>
@@ -133,18 +136,25 @@
       </div>
 
       <!-- MongoDB -->
-      <div class="timeline-item group">
-        <div class="timeline-dot"></div>
-        <div class="timeline-card left-card flex justify-end items-center space-x-4">
-          <div class="text-right">
-            <h3 class="font-bold text-white text-xl">✔ MongoDB</h3>
-            <p class="text-gray-300 text-sm">NoSQL document-oriented database.</p>
-          </div>
-          <div class="w-16 h-16 bg-white/20 backdrop-blur-md rounded-xl flex items-center justify-center border border-white/30 shadow-lg">
-            <img src="https://webassets.mongodb.com/_com_assets/cms/mongodb-logo-rgb-j6w271g1xn.jpg" class="w-12 h-12 object-contain" loading="lazy" alt="MongoDB">
+        <div class="timeline-item relative group">
+          <!-- Timeline Dot -->
+          <div class="timeline-dot absolute left-1/2 -translate-x-1/2 w-5 h-5 bg-green-400 border-2 border-white rounded-full z-10"></div>
+
+          <!-- Timeline Card -->
+          <div class="timeline-card left-card flex justify-end items-center space-x-6 mt-6 md:mt-0">
+
+            <!-- Text -->
+            <div class="text-right max-w-xs">
+              <h3 class="font-bold text-white text-xl">✔ MongoDB</h3>
+              <p class="text-gray-300 text-sm">NoSQL document-oriented database.</p>
+            </div>
+
+            <!-- Icon Box -->
+            <div class="w-24 h-24 bg-white/20 backdrop-blur-md rounded-xl flex items-center justify-center border border-white/30 shadow-lg">
+              <img src="data:image/png;base64,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" class="w-20 h-20 object-contain" loading="lazy" alt="MongoDB">
+            </div>
           </div>
         </div>
-      </div>
 
       <!-- SECTION: Languages -->
       <div class="section-title">Languages 💡</div>
@@ -153,8 +163,8 @@
       <div class="timeline-item group">
         <div class="timeline-dot"></div>
         <div class="timeline-card right-card flex items-center space-x-4">
-          <div class="w-16 h-16 bg-white/20 backdrop-blur-md rounded-xl flex items-center justify-center border border-white/30 shadow-lg">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" class="w-12 h-12 object-contain" loading="lazy" alt="Python">
+          <div class="w-25 h-25 bg-white/20 backdrop-blur-md rounded-xl flex items-center justify-center border border-white/30 shadow-lg">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" class="w-24 h-24 object-contain p-1" loading="lazy" alt="Python">
           </div>
           <div class="text-left">
             <h3 class="font-bold text-white text-xl">✔ Python</h3>
@@ -171,8 +181,8 @@
             <h3 class="font-bold text-white text-xl">✔ JavaScript</h3>
             <p class="text-gray-300 text-sm">Core of dynamic UI.</p>
           </div>
-          <div class="w-16 h-16 bg-white/20 backdrop-blur-md rounded-xl flex items-center justify-center border border-white/30 shadow-lg">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/9/99/Unofficial_JavaScript_logo_2.svg" class="w-12 h-12 object-contain" loading="lazy" alt="JavaScript">
+          <div class="w-25 h-25 bg-white/20 backdrop-blur-md rounded-xl flex items-center justify-center border border-white/30 shadow-lg">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/9/99/Unofficial_JavaScript_logo_2.svg" class="w-24 h-24 object-contain" loading="lazy" alt="JavaScript">
           </div>
         </div>
       </div>
@@ -181,8 +191,8 @@
       <div class="timeline-item group">
         <div class="timeline-dot"></div>
         <div class="timeline-card right-card flex items-center space-x-4">
-          <div class="w-16 h-16 bg-white/20 backdrop-blur-md rounded-xl flex items-center justify-center border border-white/30 shadow-lg">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" class="w-12 h-12 object-contain" loading="lazy" alt="HTML">
+          <div class="w-25 h-25 bg-white/20 backdrop-blur-md rounded-xl flex items-center justify-center border border-white/30 shadow-lg">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" class="w-24 h-24 object-contain p-2" loading="lazy" alt="HTML">
           </div>
           <div class="text-left">
             <h3 class="font-bold text-white text-xl">✔ HTML</h3>
@@ -199,8 +209,8 @@
             <h3 class="font-bold text-white text-xl">✔ CSS</h3>
             <p class="text-gray-300 text-sm">Styling web pages.</p>
           </div>
-          <div class="w-16 h-16 bg-white/20 backdrop-blur-md rounded-xl flex items-center justify-center border border-white/30 shadow-lg">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg" class="w-12 h-12 object-contain" loading="lazy" alt="CSS">
+          <div class="w-25 h-25 bg-white/20 backdrop-blur-md rounded-xl flex items-center justify-center border border-white/30 shadow-lg">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg" class="w-24 h-24 object-contain p-2" loading="lazy" alt="CSS">
           </div>
         </div>
       </div>
@@ -212,8 +222,8 @@
       <div class="timeline-item group">
         <div class="timeline-dot"></div>
         <div class="timeline-card right-card flex items-center space-x-4">
-          <div class="w-16 h-16 bg-white/20 backdrop-blur-md rounded-xl flex items-center justify-center border border-white/30 shadow-lg">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/e/e0/Git-logo.svg" class="w-12 h-12 object-contain" loading="lazy" alt="Git">
+          <div class="w-25 h-25 bg-white/20 backdrop-blur-md rounded-xl flex items-center justify-center border border-white/30 shadow-lg">
+            <img src="https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png" class="w-24 h-24 object-contain p-2" loading="lazy" alt="Git">
           </div>
           <div class="text-left">
             <h3 class="font-bold text-white text-xl">✔ Git</h3>
@@ -230,8 +240,8 @@
             <h3 class="font-bold text-white text-xl">✔ GitHub</h3>
             <p class="text-gray-300 text-sm">Repositories, CI/CD & collaboration.</p>
           </div>
-          <div class="w-16 h-16 bg-white/20 backdrop-blur-md rounded-xl flex items-center justify-center border border-white/30 shadow-lg">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" class="w-12 h-12 object-contain" loading="lazy" alt="GitHub">
+          <div class="w-25 h-25 bg-white/20 backdrop-blur-md rounded-xl flex items-center justify-center border border-white/30 shadow-lg">
+            <img src="https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png" class="w-24 h-24 object-contain p-1" loading="lazy" alt="GitHub">
           </div>
         </div>
       </div>
@@ -240,8 +250,8 @@
       <div class="timeline-item group">
         <div class="timeline-dot"></div>
         <div class="timeline-card right-card flex items-center space-x-4">
-          <div class="w-16 h-16 bg-white/20 backdrop-blur-md rounded-xl flex items-center justify-center border border-white/30 shadow-lg">
-            <img src="https://assets.vercel.com/image/upload/v1607554385/repositories/vercel/logo-inverted.svg" class="w-12 h-12 object-contain" loading="lazy" alt="Vercel">
+          <div class="w-25 h-25 bg-white/20 backdrop-blur-md rounded-xl flex items-center justify-center border border-white/30 shadow-lg">
+            <img src="data:image/png;base64,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" class="w-24 h-24 object-contain p-1" loading="lazy" alt="Vercel">
           </div>
           <div class="text-left">
             <h3 class="font-bold text-white text-xl">✔ Vercel</h3>
@@ -258,8 +268,8 @@
             <h3 class="font-bold text-white text-xl">✔ Netlify</h3>
             <p class="text-gray-300 text-sm">Frontend deployment & hosting.</p>
           </div>
-          <div class="w-16 h-16 bg-white/20 backdrop-blur-md rounded-xl flex items-center justify-center border border-white/30 shadow-lg">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/9/92/Netlify_logo.svg" class="w-12 h-12 object-contain" loading="lazy" alt="Netlify">
+          <div class="w-25 h-25 bg-white/20 backdrop-blur-md rounded-xl flex items-center justify-center border border-white/30 shadow-lg">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALkAAAC5CAMAAABDc25uAAAAilBMVEX///8FvboBSEf0/Pw+zMoEvLqP4eC27OuKq6qjvbwJTU29z8/c9vUfw8EOwL01ycd329mh5uVd1NLP8vK/7u32/f3u+/oOUVBLz83m+PhVhISsw8OTsbG1yskVVlXf9vbH8PCs6ejI19fh6ekiYF9JfHtijo3W4eGduLh4np08cnIgXl0uaGeF3t2mVpWMAAACv0lEQVR4nO3d6VLiQBSG4aZBgQRBHCQsJoqojDPM/d/eWGJJOksvFTx9TtX3/g1lnqKymXQHpRBCCCGEEEKIZ+vV9NzsV2xOQMNeqavr2JyAhlPIqYOcPsjpg5w+yOmDnD7I6YOcPsjpg5w+yC/dZPjo+ART+eKm57r5w1P+Ae+56Czln3AXnaP8C+6gM5R/w+10fvIS3EpnJx+W4TY6N/mTCbfQucmve9Xa6NzkhsdK5yZXc186v2cWvvT13c25AYvnRA3026bPLSfn1tTI5ur0RjnHanQx8hpdjrxKFySv0CXJTboouUGXJS/TOZwhQ9rdffWvH5uCEFXpuL38eX8f29daXuj2kuzldfTMFD+ywE8Vmzw2sjG3XOvs7RCb2ZCPXOvjNraznp9cFw+xobU85TpjR/eV64zbBuMt1y/MdlN/ud7wOrAHyBNe20tdnpxqoL+y+tJN+eb3eJvneZqm+fbh7ViRZ2lsbTlDnpi0/ahyUfMeCdmYTa7U1qT/4fRflF2u3g15wenA6JDv/9qXd+u+H1Ll+OCQq43xpY8vuGal5oOgVrsguXnsMS9edquwVc8rf7t+X9zewNjNXPKxIR+VF/UHgWuedpTPliHyPGmVL2es5SnkkEMOOeSQX1gedva3yDuf/X/2issi73zF9bNXuTZ516vcbnWSRw1y+iCnD3L6IKcPcvogpw9y+oxRIsf6nf1D+WFRwWrURXlkTtMjiUNpOasnXAjZEjvSUuzoVrEjisWO4hY7cl7sbAWxM0TEzsoROxNK7OwzsTP+6vArGbMs5c5slTubuDqDu2VTUfzk5nR/C5yfXO6bCgS/HULwGzkEvwXlRLfsnJ/xlKvFbOo6oTOVq8lC6BuWPIKcPsjpg5w+yOmDnD7I6YOcPsjpg5w+yOmDnD5uzyz8k/sLYgghhBBCCCEko/8AYkostMkJVgAAAABJRU5ErkJggg==" class="w-24 h-24 object-contain" loading="lazy" alt="Netlify">
           </div>
         </div>
       </div>
@@ -269,6 +279,16 @@
 </section>
 
 <style>
+    .glow-line {
+        /* base line color */
+        background-color: #092e20;
+
+        /* glow effect */
+        box-shadow: 0 0 25px #092e20;
+
+        /* optional smooth transition if you animate later */
+        transition: box-shadow 0.3s ease-in-out;
+    }
 /* =================== LIQUID GLASS EFFECT =================== */
 .title-bg {
     background: rgba(9, 46, 32, 0.5);
@@ -302,7 +322,7 @@
     transform: translateX(-50%);
     width: 18px;
     height: 18px;
-    background: #34d399;
+    background: #092e20;
     border-radius: 50%;
     border: 3px solid white;
     z-index: 10;
