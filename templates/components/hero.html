@@ -19,24 +19,36 @@
                 </h3>
             </div>
 
-            <!-- New Title with Django Focus and White Glow -->
+            <!-- Title with Django Focus and White Glow -->
             <h2 class="text-4xl md:text-5xl lg:text-4xl font-extrabold text-white tracking-tight mb-6 opacity-0 animate-fadeIn" style="animation-delay: 0.6s;">
-                Backend Developer | Expert in <span class="text-[#092e20] glow-text">Django</span> for Scalable Web Solutions
+                Building Modern Web Applications with <span class="text-[#092e20] glow-text">Django</span> and Cutting-Edge Technologies
             </h2>
 
-            <!-- New Professional Summary -->
+            <!-- Professional Summary -->
             <p class="mt-4 max-w-2xl lg:max-w-full text-sm text-gray-300 opacity-0 animate-fadeIn" style="animation-delay: 1s;">
-                As a backend developer, I specialize in building secure and scalable solutions using Django & DRF My focus is on delivering high-performance APIs that ensure seamless user experiences.
+                As a backend developer, I specialize in building secure and scalable solutions using Django & DRF. My focus is on delivering high-performance APIs that ensure seamless user experiences.
             </p>
+
+            <!-- Technologies -->
+            <div class="flex flex-wrap gap-2 mt-6">
+                <!-- Technology Tags -->
+                <span class="text-xs font-medium px-3 py-1 rounded-full bg-teal-500/20 text-teal-300">Django</span>
+                <span class="text-xs font-medium px-3 py-1 rounded-full bg-teal-500/20 text-teal-300">Django DRF</span>
+                <span class="text-xs font-medium px-3 py-1 rounded-full bg-yellow-500/20 text-yellow-400">Python</span>
+                <span class="text-xs font-medium px-3 py-1 rounded-full bg-blue-500/20 text-blue-300">JavaScript</span>
+                <span class="text-xs font-medium px-3 py-1 rounded-full bg-indigo-500/20 text-indigo-300">ReactJS</span>
+                <span class="text-xs font-medium px-3 py-1 rounded-full bg-gray-500/20 text-gray-300">NextJs</span>
+                <span class="text-xs font-medium px-3 py-1 rounded-full bg-red-500/20 text-red-300">MySQL</span>
+                <span class="text-xs font-medium px-3 py-1 rounded-full bg-green-500/20 text-green-300">PostgreSQL</span>
+                <span class="text-xs font-medium px-3 py-1 rounded-full bg-orange-500/20 text-orange-300">MongoDB</span>
+            </div>
 
             <!-- Action Buttons -->
             <div class="mt-8 flex flex-col sm:flex-row justify-center lg:justify-start gap-6 opacity-0 animate-fadeIn" style="animation-delay: 1.4s;">
-                <!-- Projects Button -->
                 <button class="px-8 py-3 rounded-lg bg-transparent text-white border border-[#092e20] font-semibold transition-all duration-300 ease-in-out transform hover:scale-105 hover:bg-[#092e20] hover:text-white hover:border-transparent">
                     <i class="fas fa-laptop-code mr-2"></i>View My Projects
                 </button>
 
-                <!-- Resume Button -->
                 <button class="px-8 py-3 rounded-lg bg-[#092e20] text-white border border-transparent font-semibold transition-all duration-300 ease-in-out transform hover:scale-105 hover:bg-transparent hover:text-white hover:border-[#092e20]">
                     <i class="fas fa-file-alt mr-2"></i>Download Resume
                 </button>
@@ -126,6 +138,15 @@
 
 /* White Glow Effect for Django text */
 .glow-text {
-    text-shadow: 0 0 15px #ffffff;
+    text-shadow: 0 0 10px #ffffff, 0 0 25px #092e20, 0 0 35px #092e20;
+    animation: glow-animation 2s ease-in-out infinite alternate;
+}
+@keyframes glow-animation {
+    0% {
+        text-shadow: 0 0 10px #ffffff, 0 0 25px #092e20, 0 0 35px #092e20;
+    }
+    100% {
+        text-shadow: 0 0 20px #ffffff, 0 0 40px #092e20, 0 0 50px #092e20;
+    }
 }
 </style>
