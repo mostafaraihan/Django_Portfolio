@@ -278,87 +278,180 @@
   </div>
 </section>
 
-<style>
+
+ <style>
+    /* =================== CSS Custom Properties (Variables) =================== */
+    :root {
+        --primary-green: #092e20;
+        --secondary-glow: #10593e; /* A lighter shade for subtle glow/border */
+        --highlight-color: #48BB78; /* Light green for gradient/hover */
+        --dot-size: 18px;
+        --dot-offset-y: 15px; /* Dot is shifted 15px down from the top of the item */
+    }
+
+    /* =================== ANIMATION KEYFRAMES =================== */
+    @keyframes fadeSlide {
+        to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes pop {
+        0% { transform: translateX(-50%) scale(0.3); }
+        100% { transform: translateX(-50%) scale(1); }
+    }
+
+    @keyframes glow-pulse {
+        0% {
+            box-shadow: 0 0 10px var(--primary-green);
+        }
+        100% {
+            box-shadow: 0 0 35px var(--secondary-glow);
+        }
+    }
+
+
+    /* =================== CENTER TIMELINE LINE STYLES =================== */
     .glow-line {
-        /* base line color */
-        background-color: #092e20;
+        /* Line is fixed 1px width in HTML, here we style the color and effects */
 
-        /* glow effect */
-        box-shadow: 0 0 25px #092e20;
+        /* 1. Gradient Color */
+        background: linear-gradient(to top, var(--highlight-color), var(--secondary-glow), var(--primary-green));
 
-        /* optional smooth transition if you animate later */
+        /* 2. Pulse Animation */
+        box-shadow: 0 0 15px var(--primary-green);
+        animation: glow-pulse 3s infinite alternate; /* Slowly pulses the glow effect */
+
         transition: box-shadow 0.3s ease-in-out;
     }
-/* =================== LIQUID GLASS EFFECT =================== */
-.title-bg {
-    background: rgba(9, 46, 32, 0.5);
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(9, 46, 32, 0.4);
-    box-shadow: 0 0 20px rgba(9, 46, 32, 0.6);
-    border-radius: 12px;
-}
 
-.section-title {
-    text-align: center;
-    color: white;
-    font-size: 1.6rem;
-    font-weight: 800;
-    margin-top: 40px;
-    margin-bottom: 10px;
-    padding: 10px 30px;
-    width: max-content;
-    margin-left: auto;
-    margin-right: auto;
-    background: rgba(9, 46, 32, 0.35);
-    border: 1px solid rgba(9, 46, 32, 0.35);
-    backdrop-filter: blur(10px);
-    border-radius: 12px;
-    animation: fadeSlide 0.8s ease forwards;
-}
+    /* =================== BASE & UTILITY STYLES =================== */
+    .title-bg {
+        background: rgba(9, 46, 32, 0.5);
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(9, 46, 32, 0.4);
+        box-shadow: 0 0 20px rgba(9, 46, 32, 0.6);
+        border-radius: 12px;
+    }
 
-.timeline-dot {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 18px;
-    height: 18px;
-    background: #092e20;
-    border-radius: 50%;
-    border: 3px solid white;
-    z-index: 10;
-    animation: pop 0.5s ease;
-}
+    .section-title {
+        text-align: center;
+        color: white;
+        font-size: 1.6rem;
+        font-weight: 800;
+        margin-top: 40px;
+        margin-bottom: 10px;
+        padding: 10px 30px;
+        width: max-content;
+        margin-left: auto;
+        margin-right: auto;
+        background: rgba(9, 46, 32, 0.35);
+        border: 1px solid rgba(9, 46, 32, 0.35);
+        backdrop-filter: blur(10px);
+        border-radius: 12px;
+        opacity: 0;
+        transform: translateY(20px);
+        animation: fadeSlide 0.8s ease forwards;
+    }
 
-.timeline-item {
-    position: relative;
-    width: 100%;
-    min-height: 120px;
-}
+    /* =================== TIMELINE DOT =================== */
+    .timeline-dot {
+        position: absolute;
+        left: 50%;
+        top: var(--dot-offset-y); /* Shifted 15px down */
+        transform: translateX(-50%);
+        width: var(--dot-size);
+        height: var(--dot-size);
+        background: var(--primary-green);
+        border-radius: 50%;
+        border: 3px solid white;
+        z-index: 10;
+        animation: pop 0.5s ease;
+        transition: all 0.3s ease;
+    }
 
-.timeline-card {
-    position: relative;
-    width: 45%;
-}
+    /* =================== TIMELINE CARD (Common Styles) =================== */
+    .timeline-item {
+        position: relative;
+        width: 100%;
+        min-height: 120px;
+        overflow: hidden;
+        clear: both;
+    }
 
-.left-card { float: left; }
-.right-card { float: right; }
+    .timeline-card {
+        position: relative;
+        width: 45%; /* Desktop width */
+        box-sizing: border-box;
+        padding: 10px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
 
-.timeline-card div.text-left,
-.timeline-card div.text-right {
-    max-width: 220px;
-}
+    /* Card Hover Effect */
+    .timeline-card:hover {
+        transform: scale(1.02); /* Slight zoom on hover */
+        box-shadow: 0 5px 20px var(--secondary-glow); /* Subtle glow on hover */
+    }
 
-@keyframes fadeSlide {
-    to { opacity: 1; transform: translateY(0); }
-}
+    /* Dot Highlight on Item Hover */
+    .timeline-item:hover .timeline-dot {
+        background-color: white;
+        border-color: var(--highlight-color);
+        box-shadow: 0 0 10px var(--highlight-color);
+    }
 
-@keyframes pop {
-    0% { transform: translateX(-50%) scale(0.3); }
-    100% { transform: translateX(-50%) scale(1); }
-}
+    /* =================== DESKTOP LAYOUT (Default) =================== */
+    .left-card {
+        float: left;
+        justify-content: flex-end;
+    }
 
-@media (max-width: 768px) {
-    .timeline-card, .left-card, .right-card { width: 100%; float: none; text-align: left; margin-top: 35px; flex-direction: row; }
-    .timeline-dot { left: 12px; }
-}
+    .right-card {
+        float: right;
+        justify-content: flex-start;
+    }
+
+    /* =================== MOBILE LAYOUT (max-width: 768px) =================== */
+    @media (max-width: 768px) {
+
+        /* 1. Center Timeline Line */
+        .absolute.left-1\/2 {
+            left: 50%;
+            transform: translateX(-50%) !important;
+        }
+
+        /* 2. Timeline Dot (Centered and 15px down) */
+        .timeline-dot {
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        /* 3. Timeline Card Adjustment: Centering Content */
+        .timeline-card, .left-card, .right-card {
+            width: 90%;
+            float: none;
+
+            margin-left: auto;
+            margin-right: auto;
+
+            margin-top: 25px;
+
+            /* Stack icon and text vertically and center them */
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* 4. Ensure Text Alignment Consistency */
+        .timeline-card div.text-left,
+        .timeline-card div.text-right {
+            text-align: center;
+            max-width: none;
+        }
+
+        /* 5. Icon/Text Spacing Fixes */
+        .timeline-card .w-25 {
+            margin-bottom: 10px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
 </style>
