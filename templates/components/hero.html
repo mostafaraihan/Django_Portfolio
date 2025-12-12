@@ -1,6 +1,7 @@
 {% load static %}
 
 <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32 overflow-hidden">
+    <!-- Blob Animation Background -->
     <div class="absolute top-1/4 left-0 w-96 h-96 bg-[#092e20]/60 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-blob-slow -z-20"></div>
     <div class="absolute bottom-1/4 right-0 w-80 h-80 bg-teal-500/60 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-blob-delay -z-20"></div>
 
@@ -10,47 +11,50 @@
 
         <div class="lg:w-1/2 text-center lg:text-left">
 
-            <div class="inline-flex items-center gap-3 px-4 py-2 mb-8 rounded-lg backdrop-blur-md bg-white/10 border border-white/20 opacity-0 animate-slide-up-initial" style="animation-delay: 0.2s;">
-                 <span class="w-3 h-3 rounded-full bg-teal-500 animate-pulse"></span>
-                 <h3 class="text-lg sm:text-xl font-semibold text-gray-400 m-0">
-                    Hello, I'm <span class="text-white font-bold">Mostafa Raihan</span>
-                 </h3>
+            <!-- Introduction -->
+            <div class="inline-flex items-center gap-3 px-4 py-2 mb-8 rounded-lg backdrop-blur-md bg-white/10 border border-[#092e20] opacity-0 animate-slide-up-initial" style="animation-delay: 0.2s;">
+                <span class="w-3 h-3 rounded-full bg-teal-500 animate-pulse"></span>
+                <h3 class="text-lg sm:text-xl font-semibold text-gray-400 m-0">
+                    Greetings, I'm <span class="text-white font-bold">Mostafa Raihan</span>
+                </h3>
             </div>
 
-
+            <!-- Main Title -->
             <h2 class="text-4xl md:text-6xl font-extrabold text-white tracking-tight mb-6 opacity-0 animate-fadeIn" style="animation-delay: 0.6s;">
-                Mastering the Backend Logic to Build <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#092e20] to-teal-500">Fast and Future</span>
-                <br>Proof Applications.
+                Specializing in Backend Development to Build <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#092e20] to-teal-500">Scalable and Secure Solutions</span>
+                <br>For Modern Applications.
             </h2>
 
-            <p class="mt-4 max-w-2xl lg:max-w-full **text-sm** text-gray-300 opacity-0 animate-fadeIn" style="animation-delay: 1s;">
-                I am a backend-focused Full-Stack Developer specializing in building **secure, high-performance APIs** with Django/DRF, ensuring clean architecture and robust database solutions.
+            <!-- Professional Description -->
+            <p class="mt-4 max-w-2xl lg:max-w-full text-sm text-gray-300 opacity-0 animate-fadeIn" style="animation-delay: 1s;">
+                I am a backend-focused Full-Stack Developer with expertise in creating high-performance APIs using Django/DRF. My focus is on **security**, **scalability**, and ensuring **robust architecture** for sustainable growth.
             </p>
 
-            <div class="mt-10 flex flex-col sm:flex-row justify-center lg:justify-start gap-4 opacity-0 animate-fadeIn" style="animation-delay: 1.4s;">
-                <button class="px-8 py-3 rounded-lg bg-[#092e20] hover:bg-teal-700 text-white font-semibold transition-all shadow-[0_0_20px_rgba(9,46,32,0.8)] transform hover:scale-[1.02]">
-                    💻 My Work
-                </button>
-                <button class="px-8 py-3 rounded-lg border border-white/20 hover:bg-white/10 text-gray-300 font-semibold transition-all transform hover:scale-[1.02]">
-                    📄 Resume
-                </button>
-            </div>
-        </div>
+            <!-- Actionable Buttons -->
+        <!-- Button 1 (Primary) with Font Awesome Icon and Animation -->
+        <button class="px-8 py-3 rounded-lg bg-transparent text-white border border-[#092e20] font-semibold transition-all duration-300 ease-in-out transform hover:scale-105 hover:bg-[#092e20] hover:text-white hover:border-transparent">
+            <i class="fas fa-laptop-code mr-2"></i>View My Work
+        </button>
 
+        <!-- Button 2 (Inverted) with Font Awesome Icon and Animation -->
+        <button class="px-8 py-3 rounded-lg bg-[#092e20] text-white border border-transparent font-semibold transition-all duration-300 ease-in-out transform hover:scale-105 hover:bg-transparent hover:text-white hover:border-[#092e20]">
+            <i class="fas fa-file-alt mr-2"></i>Download Resume
+        </button>
+
+        </div>
         <div class="lg:w-1/2 mt-12 lg:mt-0 flex justify-center lg:justify-end animate-scale-up">
             <div class="relative w-full max-w-lg p-4 rounded-2xl shadow-2xl backdrop-blur-sm bg-white/5 border border-white/10 group">
-                <img
-                    src="{% static 'images/profile.png' %}"
-                    class="w-full h-auto rounded-xl transform group-hover:scale-[0.98] transition-transform duration-700"
-                    alt="Mostafa Raihan - Professional Headshot"
-                >
+                <img src="{% static 'images/profile.png' %}" class="w-full h-auto rounded-xl transform group-hover:scale-[0.98] transition-transform duration-700" alt="Mostafa Raihan - Professional Headshot">
                 <div class="absolute inset-4 bg-[#092e20]/50 blur-xl rounded-xl -z-10 transform scale-90 opacity-60 group-hover:scale-[0.95] transition-transform duration-700"></div>
             </div>
         </div>
+
     </div>
 </div>
 
+
 <style>
+
 @keyframes slideUpInitial {
     from {
         opacity: 0;
@@ -120,3 +124,5 @@
     animation-delay: 5s;
 }
 </style>
+
+
