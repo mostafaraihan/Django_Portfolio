@@ -7,44 +7,46 @@
 
     <div class="absolute inset-0 -z-30 bg-grid-pattern opacity-10"></div>
 
-    <div class="flex flex-col lg:flex-row items-center justify-between gap-12 lg:gap-24">
+    <div class="flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-10">
 
         <div class="lg:w-1/2 text-center lg:text-left">
 
             <!-- Introduction -->
-            <div class="inline-flex items-center gap-3 px-4 py-2 mb-8 rounded-lg backdrop-blur-md bg-white/10 border border-[#092e20] opacity-0 animate-slide-up-initial" style="animation-delay: 0.2s;">
+            <div class="inline-flex items-center gap-3 px-4 py-2 mb-6 rounded-lg backdrop-blur-md bg-white/10 border border-[#092e20] opacity-0 animate-slide-up-initial" style="animation-delay: 0.2s;">
                 <span class="w-3 h-3 rounded-full bg-teal-500 animate-pulse"></span>
                 <h3 class="text-lg sm:text-xl font-semibold text-gray-400 m-0">
-                    Greetings, I'm <span class="text-white font-bold">Mostafa Raihan</span>
+                    Hi, I'm <span class="text-white font-bold">Mostafa Raihan</span>
                 </h3>
             </div>
 
-            <!-- Main Title -->
-            <h2 class="text-4xl md:text-6xl font-extrabold text-white tracking-tight mb-6 opacity-0 animate-fadeIn" style="animation-delay: 0.6s;">
-                Specializing in Backend Development to Build <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#092e20] to-teal-500">Scalable and Secure Solutions</span>
-                <br>For Modern Applications.
+            <!-- New Title with Django Focus and White Glow -->
+            <h2 class="text-4xl md:text-5xl lg:text-4xl font-extrabold text-white tracking-tight mb-6 opacity-0 animate-fadeIn" style="animation-delay: 0.6s;">
+                Backend Developer | Expert in <span class="text-[#092e20] glow-text">Django</span> for Scalable Web Solutions
             </h2>
 
-            <!-- Professional Description -->
+            <!-- New Professional Summary -->
             <p class="mt-4 max-w-2xl lg:max-w-full text-sm text-gray-300 opacity-0 animate-fadeIn" style="animation-delay: 1s;">
-                I am a backend-focused Full-Stack Developer with expertise in creating high-performance APIs using Django/DRF. My focus is on **security**, **scalability**, and ensuring **robust architecture** for sustainable growth.
+                As a backend developer, I specialize in building secure and scalable solutions using Django & DRF My focus is on delivering high-performance APIs that ensure seamless user experiences.
             </p>
 
-            <!-- Actionable Buttons -->
-        <!-- Button 1 (Primary) with Font Awesome Icon and Animation -->
-        <button class="px-8 py-3 rounded-lg bg-transparent text-white border border-[#092e20] font-semibold transition-all duration-300 ease-in-out transform hover:scale-105 hover:bg-[#092e20] hover:text-white hover:border-transparent">
-            <i class="fas fa-laptop-code mr-2"></i>View My Work
-        </button>
+            <!-- Action Buttons -->
+            <div class="mt-8 flex flex-col sm:flex-row justify-center lg:justify-start gap-6 opacity-0 animate-fadeIn" style="animation-delay: 1.4s;">
+                <!-- Projects Button -->
+                <button class="px-8 py-3 rounded-lg bg-transparent text-white border border-[#092e20] font-semibold transition-all duration-300 ease-in-out transform hover:scale-105 hover:bg-[#092e20] hover:text-white hover:border-transparent">
+                    <i class="fas fa-laptop-code mr-2"></i>View My Projects
+                </button>
 
-        <!-- Button 2 (Inverted) with Font Awesome Icon and Animation -->
-        <button class="px-8 py-3 rounded-lg bg-[#092e20] text-white border border-transparent font-semibold transition-all duration-300 ease-in-out transform hover:scale-105 hover:bg-transparent hover:text-white hover:border-[#092e20]">
-            <i class="fas fa-file-alt mr-2"></i>Download Resume
-        </button>
-
+                <!-- Resume Button -->
+                <button class="px-8 py-3 rounded-lg bg-[#092e20] text-white border border-transparent font-semibold transition-all duration-300 ease-in-out transform hover:scale-105 hover:bg-transparent hover:text-white hover:border-[#092e20]">
+                    <i class="fas fa-file-alt mr-2"></i>Download Resume
+                </button>
+            </div>
         </div>
+
+        <!-- Profile Image -->
         <div class="lg:w-1/2 mt-12 lg:mt-0 flex justify-center lg:justify-end animate-scale-up">
             <div class="relative w-full max-w-lg p-4 rounded-2xl shadow-2xl backdrop-blur-sm bg-white/5 border border-white/10 group">
-                <img src="{% static 'images/profile.png' %}" class="w-full h-auto rounded-xl transform group-hover:scale-[0.98] transition-transform duration-700" alt="Mostafa Raihan - Professional Headshot">
+                <img src="{% static 'images/profile.png' %}" class="w-full h-auto rounded-xl transform group-hover:scale-[0.98] transition-transform duration-700" alt="Mostafa Raihan - Django Backend Developer">
                 <div class="absolute inset-4 bg-[#092e20]/50 blur-xl rounded-xl -z-10 transform scale-90 opacity-60 group-hover:scale-[0.95] transition-transform duration-700"></div>
             </div>
         </div>
@@ -52,9 +54,8 @@
     </div>
 </div>
 
-
 <style>
-
+/* Slide Up Animation for "Hi, I'm Mostafa Raihan" */
 @keyframes slideUpInitial {
     from {
         opacity: 0;
@@ -69,8 +70,7 @@
     animation: slideUpInitial 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
 }
 
-
-/* Sequential Fade-In Animation (for Title, P, Buttons) */
+/* Fade-In Animation for Title, P, Buttons */
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -85,7 +85,7 @@
     animation: fadeIn 0.8s ease-out forwards;
 }
 
-/* SCALE UP (for Image Block) */
+/* Scale Up (for Image Block) */
 @keyframes scaleUp {
     from {
         opacity: 0;
@@ -101,7 +101,7 @@
     animation-delay: 0.3s;
 }
 
-/* BACKGROUND BLOB ANIMATION */
+/* Background Blob Animation */
 @keyframes blob-movement {
     0%, 100% {
         transform: translate(0, 0) scale(1);
@@ -123,6 +123,9 @@
     animation: blob-movement 20s infinite ease-in-out reverse;
     animation-delay: 5s;
 }
+
+/* White Glow Effect for Django text */
+.glow-text {
+    text-shadow: 0 0 15px #ffffff;
+}
 </style>
-
-
